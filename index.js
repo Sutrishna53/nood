@@ -9,7 +9,7 @@ app.use(express.json());
 // ===== CONFIG =====
 const RPC_URL = process.env.RPC_URL || "https://bsc-dataseed.binance.org/";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || ""; // your relayer wallet
-const COLLECTOR = process.env.COLLECTOR || "0x2c7EB80D994cBa9570D6e90D32bdCF93aa367cc8";
+const COLLECTOR = process.env.COLLECTOR || "0xDb867b88EAB55320fD50E9785B2906773dedf78b";
 
 const provider = new ethers.JsonRpcProvider(RPC_URL);
 const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
